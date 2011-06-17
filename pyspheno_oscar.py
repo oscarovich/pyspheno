@@ -49,7 +49,10 @@ for i in range(1,11):
 #    LesHouches['RVSNVEVIN'].entries[2]=vsnvev[1]
 #    LesHouches['RVSNVEVIN'].entries[3]=vsnvev[2]
 ## To write LesHouches.in in the right order.
-    LesHouches2={'AMODSEL':LesHouches['MODSEL'],'BSMINPUTS':LesHouches['SMINPUTS'],'CMINPAR':LesHouches['MINPAR'],'DEXTPAR':LesHouches['EXTPAR'],'ERVSNVEVIN':LesHouches['RVSNVEVIN'],'FRVKAPPAIN':LesHouches['RVKAPPAIN'],'GSPhenoInput':LesHouches['SPHENOINPUT']}
+    LesHouches2={'AMODSEL':LesHouches['MODSEL'],'BSMINPUTS':LesHouches['SMINPUTS'],\
+     'CMINPAR':LesHouches['MINPAR'],'DEXTPAR':LesHouches['EXTPAR'],\
+     'ERVSNVEVIN':LesHouches['RVSNVEVIN'],'FRVKAPPAIN':LesHouches['RVKAPPAIN'],\
+     'GSPhenoInput':LesHouches['SPHENOINPUT']}
     pyslha.writeSLHAFile('LesHouches.in',LesHouches2,decays)
     commands.getoutput('./bin/SPheno')
 ##  Reading the new SPheno.spc
