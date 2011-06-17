@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+'''Parallel Spheno'''
 import numpy as np
 import commands
 import pyslha
