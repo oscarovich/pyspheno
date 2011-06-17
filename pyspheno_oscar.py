@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-'''Parallel Spheno'''
+'''Random search of neutrino solutions with SPheno'''
 import numpy as np
 import commands
 import pyslha
