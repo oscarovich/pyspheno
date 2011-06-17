@@ -65,9 +65,12 @@ for i in range(1,11):
     t212=nsphenorp.entries[10]
     s213=nsphenorp.entries[11]
 # Checking neutrinosbounds at 3 sigma   
-    if (Delta2m32 > 2.18e-3 and Delta2m32 < 2.73e-3 and t223 > 0.6393e0 and t223 <1.7777e0 and Delta2m21 > 7.09e-5 and Delta2m21 < 8.19e-5 and t212 > 0.3698e0 and t212 < 0.5625e0) and s213 > 0.0e0 and s213 < 0.056e0:
+    if (Delta2m32 > 2.18e-3 and Delta2m32 < 2.73e-3 and t223 > 0.6393e0 and t223 <1.7777e0\
+     and Delta2m21 > 7.09e-5 and Delta2m21 < 8.19e-5 and t212 > 0.3698e0 and t212 < 0.5625e0)\
+     and s213 > 0.0e0 and s213 < 0.056e0:
         print "slt found at i=",i
-        print >> datos, Delta2m32, t223, Delta2m21,t212,s213, lambi[0], lambi[1], lambi[2], epsi[0], epsi[1], epsi[2]
+        print >> datos, Delta2m32, t223, Delta2m21,t212,s213,\
+        lambi[0], lambi[1], lambi[2], epsi[0], epsi[1], epsi[2]
 #
 datos.close()
 #3E-02 0.6 ! epsilon_1
